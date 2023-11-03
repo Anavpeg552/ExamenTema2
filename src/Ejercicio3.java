@@ -7,13 +7,22 @@ public class Ejercicio3 {
         System.out.print("Introduce numero impar: ");
         n = s.nextInt();
         if(n % 2 == 0 || n<1){
-            System.out.print("Número no válido: ");
+            System.out.print("Número no válido");
         }else{
             for(int i=0; i<n; i++){
-                for(int j=0; j<n-3; j++){
-                    System.out.print(" ");
+                if(i<((n-1)/2) || i>(n-1)/2){
+                    for (int j = 1; j < n - j; j++) {
+                        System.out.print(" ");
+                    }
+                    System.out.println("X");
+                }else{
+                    for(int k=0; k<n;k++){
+                        System.out.print("X");
+                    }
+                    System.out.println();
                 }
-                System.out.println("X");
+
+
             }
         }
 
