@@ -25,8 +25,9 @@ public class Ejercicio2 {
         }while (nota!=-1);
 
         if(contAlumno!=0) {
-            double media = ((double) total / contAlumno);
-            System.out.println("La media es " + media);
+            double media = ((double) (total / contAlumno));
+            //%02d ??
+            System.out.println("La media es "+ media);
             System.out.println("Aprobados: " + aprobados + " - Suspensos: " + suspensos);
         }else{
             System.out.println("No se han introducido calificaciones");
